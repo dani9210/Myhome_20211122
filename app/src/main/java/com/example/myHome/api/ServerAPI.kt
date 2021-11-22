@@ -2,6 +2,7 @@ package com.example.myHome.api
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class ServerAPI {
 
@@ -34,6 +35,7 @@ class ServerAPI {
                 retrofit = Retrofit.Builder()
                     .baseUrl(BASE_URL)
                     .client(myClient)
+                    .addConverterFactory(GsonConverterFactory.create())
                     .build()
 
             }

@@ -1,5 +1,6 @@
 package com.example.myHome.api
 
+import retrofit2.Call
 import retrofit2.http.Field
 import retrofit2.http.POST
 
@@ -12,5 +13,4 @@ interface ServerAPIService {
          @Field("email")  email : String,
          @Field("password")  pw : String
      )
-
 }
