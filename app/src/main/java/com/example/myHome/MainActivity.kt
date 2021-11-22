@@ -1,9 +1,8 @@
-package com.example.myhome
+package com.example.myHome
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
-import com.example.myhome.databinding.ActivityMainBinding
+import com.example.myHome.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity() {
 

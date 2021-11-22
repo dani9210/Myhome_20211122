@@ -1,4 +1,4 @@
-package com.example.myhome
+package com.example.myHome
 
 import android.content.Context
 import android.os.Bundle
