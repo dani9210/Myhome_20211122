@@ -25,7 +25,9 @@ class MainActivity : BaseActivity() {
             val inputEmail = binding.edtEmail.text.toString()
             val inputPassword = binding.edtPassword.text.toString()
 
-//            2. 서버에 로그인 API 호출
+//            2. 서버에 로그인 API 호출 -> Retrofit
+
+
 
         }
 
