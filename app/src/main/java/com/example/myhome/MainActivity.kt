@@ -18,6 +18,18 @@ class MainActivity : BaseActivity() {
 
     override fun setupEvents() {
 
+        binding.btnLogin.setOnClickListener {
+
+
+//            1. 입력한 id/pw 변수담자
+
+            val inputEmail = binding.edtEmail.text.toString()
+            val inputPassword = binding.edtPassword.text.toString()
+
+//            2. 서버에 로그인 API 호출
+
+        }
+
     }
 
     override fun setValues() {
