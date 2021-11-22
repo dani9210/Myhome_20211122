@@ -1,8 +1,13 @@
 package com.example.myHome
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.myHome.databinding.ActivityMainBinding
+import com.example.myHome.datas.BasicResponse
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class MainActivity : BaseActivity() {
 
@@ -26,6 +31,24 @@ class MainActivity : BaseActivity() {
             val inputPassword = binding.edtPassword.text.toString()
 
 //            2. 서버에 로그인 API 호출 -> Retrofit
+
+            apiService.postRequestLogin(inputEmail,inputPassword).enqueue(object : Callback<BasicResponse>{
+                override fun onResponse(
+                    call: Call<BasicResponse>,
+                    response: Response<BasicResponse>
+                ) {
+
+                }
+
+                override fun onFailure(call: Call<BasicResponse>, t: Throwable) {
+
+                    Toast.makeText(mContext, "서버연결에 실패했습니다.", Toast.LENGTH_SHORT).show()
+                    
+                }
+
+
+            })
+
 
 
 
